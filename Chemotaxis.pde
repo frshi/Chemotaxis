@@ -5,7 +5,7 @@
  	//initialize bacteria variables here   
  	size(300,300);
  	background(172);
- 	colony = new Bacteria[100];
+ 	colony = new Bacteria[1000];
  	for(int i = 0 ; i < colony.length; i++)
  		colony[i] = new Bacteria(150,150);
  }   
@@ -24,7 +24,7 @@
  	int myX, myY, clr;  
  	Bacteria(int x, int y)
  	{
- 		clr = color(172, 51, 172);
+ 		clr = color(50, 172, 50);
  		myX = x;
  		myY = y;
 
@@ -37,6 +37,6 @@
  	void show()
  	{
  		fill(clr);
- 		ellipse(myX, myY, 5,5);
+ 		ellipse(myX, myY, 2,2);
  	}
  }    	
